@@ -1,58 +1,58 @@
-## appmedia�̃}���`�v���C��W�����Ԋu�Ń`�F�b�N����c�[�� [���[���h�t���b�p�[]
+## appmediaのマルチプレイ募集を一定間隔でチェックするツール [ワールドフリッパー]
 
-Gist����ړ����Ă��܂��� (https://gist.github.com/Tsuuko4512/8f09bb2000fd2e241b4f53de03a22fc4)<br>
+Gistから移動してきました (https://gist.github.com/Tsuuko4512/8f09bb2000fd2e241b4f53de03a22fc4)<br>
 
-���[�t����appmedia�̃}���`�v���C��W(https://appmedia.jp/worldflipper/4181962)�����Ԋu�Ń`�F�b�N����python�X�N���v�g�ł��B<br>
-F5�����̂߂�ǂ������̂ō��܂����B<br>
-�X�V�Ԋu�͓{���Ȃ��͈͂Ŏ��ȐӔC�Őݒ肵�Ă��������B<br>
+ワーフリのappmediaのマルチプレイ募集(https://appmedia.jp/worldflipper/4181962) を一定間隔でチェックするpythonスクリプトです。<br>
+F5押すのめんどくさいので作りました。<br>
+更新間隔は怒られない範囲で自己責任で設定してください。<br>
 
-�G���[�������ĂȂ��̂őz��O�̕������܂܂�Ă���ƃG���[�ŗ����܂��B�B�B<br>
-�܂��A�z�肵�������ɂȂ��Ă��Ȃ��ꍇ�͖�������܂��B�i���[��ID�̑S�p�\�L�A�X�y�[�X�܂Ȃǂɂ͑Ή��j
+エラー処理してないので想定外の文字が含まれているとエラーで落ちます。。。<br>
+また、想定した書式になっていない場合は無視されます。（ルームIDの全角表記、スペース含などには対応）
 
 ### requirements
 
-���s����ɂ�Python3�ƈȉ��̃p�b�P�[�W���C���X�g�[������K�v������܂��B<br>
-�o�[�W�����͓��ɋC�ɂ��Ȃ��Ă��������B
+実行するにはPython3と以下のパッケージをインストールする必要があります。<br>
+バージョンは特に気にしなくていいかも。
 
 - requests
 - bs4
 
-### �ݒ�
+### 設定
 
-py�t�@�C���𒼐ڕҏW���Ă��������B
+pyファイルを直接編集してください。
 
 ```python
-REFRESH_INTERVAL_SEC=3          # �X�V�Ԋu
-QUESTNAME_PADDING_LENGTH=22     # �N�G�X�g���̋󔒖��ߌ��@�����Ȃ����瑝�₵�Ă��������i�S�p=2,���p=1�j
+REFRESH_INTERVAL_SEC=3          # 更新間隔
+QUESTNAME_PADDING_LENGTH=22     # クエスト名の空白埋め個数　長くなったら増やしてください（全角=2,半角=1）
 ```
 
-### ���s�C���[�W
+### 実行イメージ
 
-#### �S�\��
+#### 全表示
 
 ![all](https://i.imgur.com/VtHTgZn.png)
 
-#### �i�荞�ݕ\��
+#### 絞り込み表示
 
 ![filter](https://i.imgur.com/IIq8vPD.png)
 
-### �X�V����
+### 更新履歴
 
 #### 19/12/04
 
-- �T�C�g�̃��C�A�E�g�ύX�ɑΉ�
-- 19/11/30�̂��̂����̂܂܎g�p�ł������߁A�i�荞�ݑΉ��łɖ߂����B
+- サイトのレイアウト変更に対応
+- 19/11/30のものがそのまま使用できたため、絞り込み対応版に戻した。
 
 #### 19/12/02
 
-- �T�C�g�̃��C�A�E�g�ύX�ɑΉ�
-- �i�荞�݋@�\�̍폜
-- �X�V�Ԋu��5�b�����ɕύX
+- サイトのレイアウト変更に対応
+- 絞り込み機能の削除
+- 更新間隔を5秒おきに変更
 
 #### 19/11/30
 
-- �N�G�X�g�̍i�荞�݂ɑΉ�
+- クエストの絞り込みに対応
 
 #### 19/11/29
 
-- ����
+- 初版
