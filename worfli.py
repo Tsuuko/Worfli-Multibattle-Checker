@@ -5,7 +5,7 @@ from datetime import datetime
 import unicodedata
 
 ##### 変更箇所 #####
-REFRESH_INTERVAL_SEC=1.5          # 更新間隔
+REFRESH_INTERVAL_SEC=5          # 更新間隔
 QUESTNAME_PADDING_LENGTH=22     # クエスト名の空白埋め個数　長くなったら増やしてください（全角=2,半角=1）
 ###################
 
