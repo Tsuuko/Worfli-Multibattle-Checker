@@ -2,6 +2,8 @@
 
 Gistから移動してきました (https://gist.github.com/Tsuuko4512/8f09bb2000fd2e241b4f53de03a22fc4)<br>
 
+Discordサーバーで動くようにしました。 (https://discord.gg/pJkPy74)<br>
+
 ワーフリのappmediaのマルチプレイ募集(https://appmedia.jp/worldflipper/4181962) を一定間隔でチェックするpythonスクリプトです。<br>
 F5押すのめんどくさいので作りました。<br>
 更新間隔は怒られない範囲で自己責任で設定してください。<br>
